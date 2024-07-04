@@ -19,4 +19,15 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
       console.log("Age element not found");
     }
+
+    var email = "robin@robinversloot.nl"
+    var emailElement = document.getElementById('email');
+    if (nameElement) {
+        console.log("E-mail element found");
+        emailElement.textContent += email;
+    }
+    else {
+        console.log("Email element nog found");
+    }
+    }
   });
