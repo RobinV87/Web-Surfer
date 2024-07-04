@@ -1,8 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
+    console.log("DOM fully loaded and parsed");
+    
     var name = "Robin";
-    document.getElementById('name-item').textContent += name;
+    var nameElement = document.getElementById('name-item');
+    if (nameElement) {
+      console.log("Name element found");
+      nameElement.textContent += name;
+    } else {
+      console.log("Name element not found");
+    }
   
     var currentYear = new Date().getFullYear();
     var age = currentYear - 1987;
-    document.getElementById('age').textContent += age;
+    var ageElement = document.getElementById('age');
+    if (ageElement) {
+      console.log("Age element found");
+      ageElement.textContent += age;
+    } else {
+      console.log("Age element not found");
+    }
   });
