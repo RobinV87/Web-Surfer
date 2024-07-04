@@ -5,9 +5,10 @@ body {
 }
 
 .header{
-    border: 5px solid green;
+    border-bottom: 5px solid rgb(1, 92, 1);
 }
 
 .info {
     text-align: left;
+    list-style-type: none;
 }
