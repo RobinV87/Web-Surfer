@@ -1,5 +1,8 @@
-var name = "Robin";
+document.addEventListener("DOMContentLoaded", function() {
+    var name = "Robin";
     document.getElementById('name-item').textContent += name;
-
-var age = Date.getFullYear() - 1987;
+  
+    var currentYear = new Date().getFullYear();
+    var age = currentYear - 1987;
     document.getElementById('age').textContent += age;
+  });
